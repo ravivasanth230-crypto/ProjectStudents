@@ -4,8 +4,63 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+       <!-- Compiled and minified CSS -->
+   
 </head>
 <body>
+    <nav class="nav">
+        <a href="" class="amazon">Amazon</a>
+        <input type="search" name="" id="" placeholder="search here">
+        <a href="">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        
+    </nav>
     
+    <div class="container">
+        <div class="image1">
+            <img src="image/image.png" alt="">
+            <p>This dress is very good</p>
+            <button type="button">Buy Now</button>
+             
+        </div>
+        <div class="image1">
+            <img src="image/image.png" alt="">
+              <p>This dress is very good</p>
+              <button type="button">Buy Now</button>
+        </div>
+        <div class="image1">
+            <img src="image/image.png" alt="">
+              <p>This dress is very good</p>
+              <button type="button">Buy Now</button>
+        </div>
+        <div class="image1">
+            <img src="image/image.png" alt="">
+              <p>This dress is very good</p>
+              <button type="button">Buy Now</button>
+        </div>
+       
+    </div>
+
+    <form action="">
+        <label for="input"> First number</label>
+        <input type="number" name="" id="input1">
+        <label for="input2"> Second number</label>
+        <input type="number" name="" id="input2">
+            <button onclick="add()">Calculate</button>
+            <p id="result"></p>
+
+    </form>
+    <script>
+        function add(){
+            event.preventDefault();
+            let n1 = document.getElementById("input1").value;
+            let n2 = document.getElementById("input2").value;
+            let sum = Number(n1)+Number(n2);
+            document.getElementById("result").textContent = sum;
+        }
+    </script>
 </body>
 </html>
